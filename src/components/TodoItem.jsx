@@ -6,9 +6,9 @@ export const TodoItem = ({ task }) => {
   const removeTask = useTodoStore((state) => state.removeTask);
 
   return (
-    <li className="flex items-center justify-between p-2 border-b">
+    <li className="taskItem">
       <div
-        className={`flex-1 cursor-pointer ${task.completed ? 'line-through text-gray-400' : ''}`}
+        className={`task-mark-complete ${task.completed ? 'task-mark-incomplete' : ''}`}
         onClick={() => toggleTask(task.id)}
         role="button"
         tabIndex={0}
@@ -19,7 +19,7 @@ export const TodoItem = ({ task }) => {
       </div>
       <button
         onClick={() => removeTask(task.id)}
-        className="text-red-500 hover:text-red-700"
+        className="remove-button"
         aria-label="Delete task"
       >
         ✕

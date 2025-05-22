@@ -13,15 +13,15 @@ export const TodoForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="p-4 flex gap-2">
+    <form onSubmit={handleSubmit} className="tasks-count">
       <input
-        className="flex-1 p-2 border rounded"
+        className="input-form"
         type="text"
         placeholder="Add a task"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
-      <button type="submit" className="px-4 py-2 bg-green-500 text-white rounded">
+      <button type="submit" className="task-submit">
         Add
       </button>
     </form>

@@ -5,7 +5,7 @@ export const Header = () => {
   const incomplete = tasks.filter((t) => !t.completed).length;
 
   return (
-    <header className="p-4 text-center bg-blue-600 text-white">
+    <header className="header-text">
       <h1 className="text-2xl font-bold">Now</h1>
       <p>{incomplete} tasks remaining</p>
     </header>
