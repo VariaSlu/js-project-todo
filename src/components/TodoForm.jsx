@@ -13,7 +13,7 @@ export const TodoForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="tasks-count">
+    <form onSubmit={handleSubmit} className="submit-form">
       <input
         className="input-form"
         type="text"
