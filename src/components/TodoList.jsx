@@ -25,8 +25,11 @@ export const TodoList = () => {
             <span className="custom-checkbox" />
             <span className="task-text">{task.title}</span>
           </label>
-          <button onClick={() => removeTask(task.id)}>Delete</button>
-
+          <button
+            className="delete-button"
+            aria-label="Delete task"
+            onClick={() => removeTask(task.id)}>Delete</button>
+          <hr class="dashed"></hr>
         </li>
       ))}
     </ul>

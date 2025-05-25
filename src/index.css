@@ -23,7 +23,7 @@ h1 {
 }
 
 p {
-  color: grey;
+  color: rgb(96, 95, 95);
 
 }
 
@@ -91,21 +91,9 @@ ul {
 }
 
 .delete-button {
-  background: transparent;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-  color: #a84444;
-}
+  height: 32px;
+  border: 2px solid #7a6c5d;
+  border-radius: 4px;
+  background-color: transparent;
 
-.task-item:hover .delete-button {
-  opacity: 1;
-}
-
-.task-content {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
 }
