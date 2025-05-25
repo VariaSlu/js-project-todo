@@ -6,7 +6,7 @@ export const Header = () => {
 
   return (
     <header className="header-text">
-      <h1 className="text-2xl font-bold">Now</h1>
+      <h1 className="headline">Now</h1>
       <p>{incomplete} tasks remaining</p>
     </header>
   );
